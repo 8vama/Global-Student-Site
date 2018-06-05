@@ -1,4 +1,3 @@
-
 .rowmain{
     display: grid;
     grid-template-columns: 100px auto auto auto 100px;
@@ -7,7 +6,9 @@
 .columnmain {
     margin: auto;
 }
-
+a:hover {
+    color: blue;
+}
 .title1{
     color:white;
     font-size: 3vw;
@@ -21,7 +22,7 @@
 }
 
 .sections1{
-    background-image:url("resources/Rice Global Mockup Resources/16.09 - Kaysie spotlight photo.jpg");
+    background-image:url("/sites/g/files/bxs1331/f/16.09 - Kaysie spotlight photo.jpg");
     float: bottom;
     height: 400px;
     width: 400px;
@@ -126,7 +127,7 @@ div.desc {
     background: white;
   cursor: pointer;
   position: absolute;
-  top: 1150px;
+  top: 1250px;
     left: 100px;
   width: auto;
   padding: 16px;
@@ -144,8 +145,8 @@ div.desc {
     background: white;
   cursor: pointer;
   position: absolute;
-  top: 1150px;
-    left: 1780px;
+  top: 1250px;
+  left: 1780px;
   width: auto;
   padding: 16px;
   margin-top: -500px;
