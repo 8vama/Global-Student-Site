@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .rowmain{
+    display: grid;
+    grid-template-columns: auto minmax(400px, 600px)  minmax(400px, 600px) minmax(400px, 600px) auto;
+}
+
+.columnmain {
+    margin: auto;
+    position: relative;
+}
+
+.grey_layer{
+    box-sizing: border-box;
+    background-color: #5e60626b;
+    background-position: center ;
+    position:absolute;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 70%;
+    color:white;
+    font-size: 36px;
+    font-family:  Verdana, Arial, sans-serif;
+    line-height: 1.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.resize {
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 1200px){
+    .rowmain{
+        grid-template-columns: auto;
+    }
+}
+</style>
+
+<div class="rowmain">
+    <div class="columnmain">
+        &nbsp;
+    </div>
+    <div class="columnmain"  onclick="window.location='students/stories';" style="cursor: pointer;" >
+        <div class="grey_layer">#Hello World <br/>#Hello Rice</div>
+        <img class="resize" src="resources/Rice Global Mockup Resources/spotlight1.400.400.jpg" />
+    </div>
+    <div class="columnmain" onclick="window.location='https://abroad.rice.edu/';" style="cursor: pointer;" >
+        <div class="grey_layer">Study Aboard</div>
+        <img class="resize" src="resources/Rice Global Mockup Resources/spotlight2.400.400.jpg"/>
+
+    </div>
+    <div class="columnmain" onclick="window.location='https://abroad.rice.edu/';" style="cursor: pointer;">
+        <div class="grey_layer">International Students</div>
+        <img class="resize" src="resources/Rice Global Mockup Resources/spotlight3.400.400.jpg"/>
+    </div>
+    <div class="columnmain">
+        &nbsp;
+    </div>
+</div>
+</body>
+</html>
